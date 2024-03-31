@@ -1,0 +1,28 @@
+<p>Rental details</p>
+
+  <table class="table table-striped" style="width:50%"> 
+    <thead> 
+        <tr> 
+            <th> 
+                Name 
+            </th> 
+            <th> 
+                Description 
+            </th> 
+            <th> 
+                Occupancy 
+            </th> 
+            <th> 
+                Price 
+            </th> 
+        </tr> 
+    </thead> 
+    <tbody> 
+        <tr *ngFor="let item of apidata"> 
+            <td>{{ item.name }}</td> 
+            <td>{{ item.description }}</td> 
+            <td>{{ item.occupancy }}</td> 
+            <td>{{ item.price }}</td> 
+        </tr> 
+    </tbody> 
+</table>
